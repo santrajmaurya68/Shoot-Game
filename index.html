@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Game</title>
+</head>
+
+<body>
+  <h1 class="game_name">
+    <img src="download.jpg" alt="Shoot">
+    Shoot of eachouther</h1>
+  <div class="player_win_count">
+    <p>Player1: <span id="p1Win_rate">0</span></p>
+    <p>Player2: <span id="p2Win_rate">0</span></p>
+</div>
+  <div class="game">
+    <div class="player1_gun">
+      <div class="player1_gun_Head"></div>
+    </div>
+    <span class="player_1_health" id="player1_health">100</span>
+    <span class="player_2_health" id="player2_health">100</span>
+    <span id="player_won">Game Start</span>
+    <div class="emo1"><span id="emo1_val">2</span></div>
+    <div class="emo2"><span id="emo2_val">2</span></div>
+    <div class="player2_gun">
+      <div class="player2_gun_Head"></div>
+    </div>
+  </div>
+  <div class="game_on">
+    <div class="turn1"></div>
+    <button class="player1_turn" id="p1Turn">Player1</button>
+    <button class="game_start" id="start">Start</button>
+    <button class="player2_turn" id="p2Turn">Player2</button>
+    <div class="turn2"></div>
+  </div>
+  <div class="space"></div>
+  <script src="./script.js"></script>
+</body>
+
+</html>

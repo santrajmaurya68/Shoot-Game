@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  img{
+    width: 100%;
+    height: 5%;
+  }
+  body{
+    background-color: #f59797;
+  }
+  .game_name {
+    text-align: center;
+    margin-top: 1rem;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 2.5rem;
+    color: #032203;
+    border-bottom: 2px solid #190224;
+  }
+  .game {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .game .player1_gun,
+  .player2_gun {
+    width: 100px;
+    height: 100px;
+    margin: 12rem 0;
+    background-color: aqua;
+  }
+  
+  .game .emo1 {
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background-color: red;
+    border: 1px solid #000;
+    position: absolute;
+    left: 12%;
+    color: #fff;
+    opacity: 0;
+  }
+  
+  .game .emo2 {
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background-color: green;
+    border: 1px solid #000;
+    position: absolute;
+    right: 12%;
+    color: #fff;
+    z-index: 1;
+    opacity: 0;
+  }
+  
+  .game .emo1 span,
+  .game .emo2 span {
+    margin-top: 0.2rem;
+    margin-left: 0.5rem;
+    font-weight: bold;
+    position: absolute;
+    background-color: chocolate;
+  }
+  
+  .game .player_1_health {
+    position: absolute;
+    left: 1%;
+    color: coral;
+    font-weight: bolder;
+    font-size: larger;
+    border: 1px solid #032203;
+    padding: 0.3rem;
+    border-radius: 1rem;
+  }
+  
+  .game .player_2_health {
+    position: absolute;
+    right: 1%;
+    color: coral;
+    font-weight: bolder;
+    font-size: larger;
+    border: 1px solid #032203;
+    padding: 0.3rem;
+    border-radius: 1rem;
+  }
+  .game .player1_gun {
+    border-top-right-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+  }
+  
+  .game .player2_gun {
+    border-top-left-radius: 3rem;
+    border-bottom-left-radius: 3rem;
+  }
+  
+  .game .player1_gun .player1_gun_Head {
+    position: absolute;
+    left: 80px;
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-left: 100px solid rgb(51 110 126);
+    border-bottom: 50px solid transparent;
+  }
+  
+  .game .player2_gun .player2_gun_Head {
+    position: absolute;
+    right: 80px;
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-right: 100px solid rgb(51 110 126);
+    border-bottom: 50px solid transparent;
+  }
+  
+  .game_on {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+  }
+  
+  .game_on .turn1 {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border: 1px solid #f59797;
+    border-radius: 100%;
+    background-color: #35a01b;
+    left: 21%;
+    display: none;
+  }
+  
+  .game_on .turn2 {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border: 1px solid #f59797;
+    border-radius: 100%;
+    background-color: red;
+    right: 10.5%;
+    display: none;
+  }
+  
+  #player_won {
+    font-size: 1.4rem;
+    font-weight: bolder;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    opacity: 0;
+  }
+  
+  .game_on button {
+    padding: 1rem 2rem;
+  
+    background-color: gold;
+    border-radius: 50px;
+    color: 000000;
+    font-weight: 300;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    cursor: pointer;
+    border-color: #190224;
+  }
+  .game_on .game_start {
+    background-color: #8f0840;
+  }
+  
+  .anime1 {
+    position: absolute;
+    opacity: 1 !important;
+    animation-name: moveRight;
+    animation-duration: 1s;
+  }
+  
+  @keyframes moveRight {
+    0% {
+      left: 12%;
+    }
+    100% {
+      left: 90%;
+    }
+  }
+  
+  .anime2 {
+    position: absolute;
+    opacity: 1 !important;
+    animation-name: moveLeft;
+    animation-duration: 1s;
+  }
+  
+  @keyframes moveLeft {
+    0% {
+      right: 12%;
+    }
+    100% {
+      right: 90%;
+    }
+  }
+
+.player_win_count{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem;
+}
+
+.player_win_count p{
+    color: #270613;
+    font-size: 1.6rem;
+}
+
+.space{
+    margin-top: 2rem;
+}
